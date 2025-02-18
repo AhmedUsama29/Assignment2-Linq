@@ -1,4 +1,5 @@
-﻿using static Assignment2_Linq.ListGenerators;
+﻿using System.ComponentModel.DataAnnotations;
+using static Assignment2_Linq.ListGenerators;
 
 namespace Assignment2_Linq
 {
@@ -89,6 +90,53 @@ namespace Assignment2_Linq
 
             //Console.WriteLine(res);
 
+            #endregion
+
+            #region Q6 : Get the length of the shortest word in dictionary_english.txt
+
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+            //var res = words.Min(word => word.Length);
+
+            //Console.WriteLine(res);
+
+            #endregion
+
+            #region Q7 : Get the length of the longest word in dictionary_english.txt
+
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+            //var res = words.Max(word => word.Length);
+
+            //Console.WriteLine(res);
+
+            #endregion
+
+            #region Q8 : Get the average length of the words in dictionary_english.txt
+
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+            //var res = words.Average(word => word.Length);
+
+            //Console.WriteLine(res);
+
+            #endregion
+
+            #region Q9 : Get the total units in stock for each product category
+
+            //var res = from n in ProductList
+            //          group n by n.Category
+            //          into grouped
+            //            select new
+            //            {
+            //                Category = grouped.Key,
+            //                TotalUnitsInStock = grouped.Sum(p => p.UnitsInStock)
+            //            };
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
             #endregion
