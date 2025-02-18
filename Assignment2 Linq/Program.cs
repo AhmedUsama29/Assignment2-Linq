@@ -390,7 +390,63 @@ namespace Assignment2_Linq
 
             #endregion
 
+            #region Set Operators
 
+            #region Q1 : Find the unique Category names from Product List
+
+            //var res = ProductList.Select(p => p.Category).Distinct();
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q2 : Produce a Sequence containing the unique first letter from both product and customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Union(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q3 : Create one sequence that contains the common first letter from both product and customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Intersect(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q4 : Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Except(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q5 : Create one sequence that contains the last Three Characters in each name of all customers and products, including any duplicates
+
+            //var res = ProductList.Select(p => p.ProductName.Substring(p.ProductName.Length - 3))
+            //                     .Union(CustomerList.Select(c => c.CustomerID.Substring(c.CustomerID.Length - 3)));
+
+            //foreach (var item in res)
+            //    Console.WriteLine(item);
+
+            #endregion
+
+            #endregion
 
         }
     }
