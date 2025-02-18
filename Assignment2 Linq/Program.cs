@@ -25,7 +25,13 @@ namespace Assignment2_Linq
 
             #endregion
 
-            #region Q3 : 
+            #region Q3 :  Retrieve the second number greater than 5 
+
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var res = Arr.Where(p => p > 5).OrderBy(p => p).ElementAt(1);
+
+            //Console.WriteLine(res);
 
             #endregion
 
