@@ -324,7 +324,129 @@ namespace Assignment2_Linq
 
             #endregion
 
+            #region Transformation Operators
 
+            //same as last assignment   /* Repeated */
+
+            #region Q1 : Return a sequence of just the names of a list of products.
+
+            //var res = ProductList.Select(p => p.ProductName);
+
+            #endregion
+
+            #region Q2 : Produce a sequence of the uppercase and lowercase versions of each word in the original array (Anonymous Types).
+
+            //string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+
+            //var res = from n in words
+            //          select new { UpperCase = n.ToUpper(), LowerCase = n.ToLower() };
+
+            #endregion
+
+            #region Q3 : Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
+
+            //var res = ProductList.Select(p => new {p.ProductID, p.ProductName, Price = p.UnitPrice});
+
+            #endregion
+
+            #region Q4 : Determine if the value of ints in an array match their position in the array.
+
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var res = Arr.Select((n, i) => $"{n} : {n == i}");
+
+            #endregion
+
+            #region Q5 : Returns all pairs of numbers from both arrays such that the number from numbersA is less than the number from numbersB.
+
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+
+            //var res = from a in numbersA
+            //          from b in numbersB
+            //          where a < b
+            //          select $"{a} is less than {b}";
+
+            #endregion
+
+            #region Q6 : Select all orders where the order total is less than 500.00.
+
+            //var res = CustomerList.SelectMany(c => c.Orders).Where(o => o.Total < 500);
+
+            #endregion
+
+            #region Q7 : Select all orders where the order was made in 1998 or later.
+
+            //var res = CustomerList.SelectMany(c => c.Orders).Where(o => o.OrderDate.Year >= 1998);
+
+            #endregion
+
+            #region ForEach
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #endregion
+
+            #region Set Operators
+
+            #region Q1 : Find the unique Category names from Product List
+
+            //var res = ProductList.Select(p => p.Category).Distinct();
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q2 : Produce a Sequence containing the unique first letter from both product and customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Union(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q3 : Create one sequence that contains the common first letter from both product and customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Intersect(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q4 : Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+
+            //var res = ProductList.Select(p => p.ProductName[0]).Except(CustomerList.Select(c => c.CustomerID[0]));
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q5 : Create one sequence that contains the last Three Characters in each name of all customers and products, including any duplicates
+
+            //var res = ProductList.Select(p => p.ProductName.Substring(p.ProductName.Length - 3))
+            //                     .Union(CustomerList.Select(c => c.CustomerID.Substring(c.CustomerID.Length - 3)));
+
+            //foreach (var item in res)
+            //    Console.WriteLine(item);
+
+            #endregion
+
+            #endregion
 
         }
     }
