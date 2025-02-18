@@ -1,6 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.Intrinsics.X86;
 using System.Threading;
 using static Assignment2_Linq.ListGenerators;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Assignment2_Linq
 {
@@ -479,6 +482,54 @@ namespace Assignment2_Linq
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #endregion
+
+            #region Grouping Operators
+
+            #region Q1 : Use group by to partition a list of numbers by their remainder when divided by 5
+
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            //var res = numbers.GroupBy(n => n % 5)
+            //                 .Select(p => $"Number with a reminder of {p.Key} when devided by 5 : \n{string.Join(", ", p)}");
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q2 : Uses group by to partition a list of words by their first letter.
+
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+            //var res = words.GroupBy(w => w.First())
+            //               .Select(p => $"Words starting with {p.Key} : \n{string.Join(", ", p)}");
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q3 : Use Group By with a custom comparer that matches words that are consists of the same Characters Together
+
+            //String[] Arr = { "from", "salt", "earn", " last", "near", "form" };
+    
+            //var res = Arr.GroupBy(p => p, new SameLetters())
+            //             .Select(p => $"Words with the same letters : \n{string.Join(", ", p)}");
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ////i don't know why it gets wrong when i run it i tried a lot of ways but it didn't work
 
             #endregion
 
