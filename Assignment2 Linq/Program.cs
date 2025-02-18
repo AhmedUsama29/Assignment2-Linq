@@ -179,7 +179,27 @@ namespace Assignment2_Linq
 
             #endregion
 
-            #region Q13 : 
+            #region Q13 : Get the products with the most expensive price in each category.
+
+            //var res = ProductList.GroupBy(p => p.Category)
+            //                     .Select(g => new { Category = g.Key , MostExpensive = g.OrderByDescending(p => p.UnitPrice).First() });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q14 : Get the average price of each category's products.
+
+            //var res = ProductList.GroupBy(p => p.Category)
+            //                     .Select(g => new { Category = g.Key, average = g.Average( p => p.UnitPrice) });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
 
