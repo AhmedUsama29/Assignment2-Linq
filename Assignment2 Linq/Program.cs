@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Threading;
 using static Assignment2_Linq.ListGenerators;
 
 namespace Assignment2_Linq
@@ -204,6 +205,126 @@ namespace Assignment2_Linq
             #endregion
 
             #endregion
+
+            #region Ordering Operators
+
+            #region Q1 : Sort a list of products by name
+
+            //var res = ProductList.OrderBy(p => p.ProductName);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q2 : Uses a custom comparer to do a case-insensitive sort of the words in an array.
+
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //CaseInsensitive caseInsensitive = new CaseInsensitive();
+
+            //var res = Arr.OrderBy(p => p, caseInsensitive);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q3 : Sort a list of products by units in stock from highest to lowest.
+
+            //var res = ProductList.OrderByDescending(p => p.UnitsInStock);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q4 : Sort a list of digits, first by length of their name, and then alphabetically by the name itself.
+
+            //string[] Arr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+
+            //var res01 = Arr.OrderBy(p => p.Length);
+
+            //var res02 = Arr.OrderBy(p => p);
+
+            //foreach (var item in res01)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.WriteLine("=============================");
+
+            //foreach (var item in res02)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            #endregion
+
+            #region Q5 : Sort first by-word length and then by a case-insensitive sort of the words in an array.
+
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //CaseInsensitive caseInsensitive = new CaseInsensitive();
+
+            //var res = Arr.OrderBy(p => p.Length).ThenBy(p => p , caseInsensitive);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q6 : Sort a list of products, first by category, and then by unit price, from highest to lowest.
+
+            //var res = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q7 : Sort first by-word length and then by a case-insensitive descending sort of the words in an array.
+
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //CaseInsensitive caseInsensitive = new CaseInsensitive();
+            //                                           //added Descending only from Q5
+            //var res = Arr.OrderBy(p => p.Length).ThenByDescending(p => p, caseInsensitive);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q8 : Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+
+            //string[] Arr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+
+            //var res = Arr.Where(p => p[1] == 'i').ToList();
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #endregion
+
+
 
         }
     }
