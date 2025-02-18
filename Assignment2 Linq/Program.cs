@@ -139,6 +139,70 @@ namespace Assignment2_Linq
             //}
             #endregion
 
+            #region Q10 : Get the cheapest price among each category's products
+
+            //var res = ProductList.GroupBy(p => p.Category).Select(p => new { Category = p.Key, CheapestPrice = p.Min(p => p.UnitPrice) });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q11 : Get the products with the cheapest price in each category (Use Let)
+
+            //var res = from p in ProductList
+            //          group p by p.Category into g
+            //          let cheapestProduct = g.OrderBy(p => p.UnitPrice).First()
+            //          select new
+            //          {
+            //              Category = g.Key,
+            //              CheapestProduct = cheapestProduct
+            //          };
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q12 : Get the most expensive price among each category's products.
+
+            //var res = ProductList.GroupBy(p => p.Category).Select(p => new { Category = p.Key, MostExpensive = p.Max(p => p.UnitPrice) });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q13 : Get the products with the most expensive price in each category.
+
+            //var res = ProductList.GroupBy(p => p.Category)
+            //                     .Select(g => new { Category = g.Key , MostExpensive = g.OrderByDescending(p => p.UnitPrice).First() });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q14 : Get the average price of each category's products.
+
+            //var res = ProductList.GroupBy(p => p.Category)
+            //                     .Select(g => new { Category = g.Key, average = g.Average( p => p.UnitPrice) });
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
             #endregion
 
         }
